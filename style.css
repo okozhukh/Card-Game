@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ece7e7;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.level1 {
+  border: 2px solid #db34a9;
+  color: #db34d3;
+}
+
+.level2 {
+  border: 2px solid #34db45;
+  color: #85db34;
+}
+
+.level3 {
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.game-board {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #ff0000, #ff7700, #ffd400, #aaff00, #00ff77, #0077ff, #5500ff, #ff00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.card.flipped {
+  color: #000;
+  background: #fff;
+}
+
+.start-game {
+  border: 2px solid #db7a34;
+  color: #db8d34;
+}
+
+.pause-game {
+  border: 2px solid #a134db;
+  color: #a818a8;
+}
+
+.game-selector {
+  margin-left: 100px;
+}
+
+.score {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.timer {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.message-container {
+  display: block;
+}
